@@ -5,6 +5,7 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <Logo src={require('../../assets/images/logo.png')} alt=''/>
+      <p>test</p>
     </NavbarContainer>
   )
 }
