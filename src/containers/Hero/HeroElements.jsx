@@ -1,26 +1,14 @@
 import styled from "styled-components";
 import { colors } from "../../assets/colors";
 
-export const HeroContainer = styled.div`
-  height: 100%;
-  padding: 0 5vw;
-  
-  @media screen and (min-width: 800px){
-    height: 100vh;
-  }
-  
-  `
-
 export const HeroContentWrapper = styled.div`
-  /* background-color: red; */
   height: fit-content;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 40px;
   grid-template-areas: 
     'title'
     'image'
     'text';
-
   
   @media screen and (min-width: 800px){
     grid-template-areas: 
@@ -32,10 +20,11 @@ export const HeroContentWrapper = styled.div`
 
 export const HeroTitle = styled.p`
   grid-area: title;
-  font-size: 54px;
+  font-size: 52px;
   font-weight: 500;
+  line-height: 64px;
   color: ${colors.primary};
-  margin-top: 5vw;
+  /* margin-top: 5vw; */
 
   @media screen and (min-width: 800px){
     font-size: 64px;
@@ -44,6 +33,7 @@ export const HeroTitle = styled.p`
 
 export const HeroText = styled.p`
   font-size: 18px;
+  line-height: 29px;
   color: ${colors.light1};
 `
 
@@ -62,8 +52,6 @@ export const HeroImg = styled.img`
 `
 
 export const HeroButtonWrapper = styled.div`
-  /* height: 22px; */
-  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   max-width: 260px;

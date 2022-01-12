@@ -1,10 +1,11 @@
 import React from 'react'
-import { Button } from '../Button'
-import { HeroButtonWrapper, HeroContainer, HeroContentWrapper, HeroImg, HeroText, HeroTextWrapper, HeroTitle } from './HeroElements'
+import { Container } from '../../assets/styles'
+import { Button } from '../../components/Button'
+import { HeroButtonWrapper, HeroContentWrapper, HeroImg, HeroText, HeroTextWrapper, HeroTitle } from './HeroElements'
 
 const Hero = () => {
   return (
-    <HeroContainer>
+    <Container>
       <HeroContentWrapper>
         <HeroTitle>Good Food Us <br/> Good Mood</HeroTitle>
         <HeroTextWrapper>
@@ -12,11 +13,11 @@ const Hero = () => {
         </HeroTextWrapper>
         <HeroImg src={require('../../assets/images/green-salad-tomato.png')} alt=''/>
         <HeroButtonWrapper>
-          <Button>Daftar Sekarang</Button>
+          <Button shadow>Daftar Sekarang</Button>
           <Button grey>About Us</Button>
         </HeroButtonWrapper>
       </HeroContentWrapper>
-    </HeroContainer>
+    </Container>
   )
 }
 
