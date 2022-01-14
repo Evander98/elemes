@@ -41,4 +41,41 @@ To verify your CLI installation, use the command below:
 
 `heroku --version`
 
-![image](https://user-images.githubusercontent.com/47407913/149333764-a81521f4-d033-4abf-8ab2-05d51e544291.png)
+## Login to Heroku
+
+Open Heroku website https://id.heroku.com/login then login from your browser.
+
+Also you need to login from your Heroku CLI:
+
+`heroku login`
+
+It will open your browser for the authentication.
+
+## Setting up new Heroku app
+
+On the Heroku dashboard, press button New then press Create new app:
+
+![image](https://user-images.githubusercontent.com/47407913/149549419-16ccab8e-2234-4bdc-a1b7-d7a6ee97fe44.png)
+
+Type your app name:
+
+![image](https://user-images.githubusercontent.com/47407913/149549639-1d625e63-5c43-4b6b-b4a9-662d20e39ecd.png)
+
+## Deploy to Heroku
+
+In your project directory, run:
+
+`git add .`
+
+Commit your project:
+
+`git commit -m "Heroku deploy"`
+
+Add the remote URL:
+
+`git remote add origin [paste your remote URL/Heroku app URL]`
+
+Deploy to Heroku:
+
+`git push -u origin main`
+
