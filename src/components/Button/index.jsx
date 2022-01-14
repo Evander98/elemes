@@ -22,8 +22,12 @@ export const Button = styled.button`
   ${({grey}) => {
     if(grey){
       return css`
-        background-color: ${colors.lightGray2};
+        background: ${colors.lightGray2};
         color: ${colors.dark};
+   
+        &:active{
+          background: #f7f7f7;
+        }
       `
     }
   }}
